@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>
+        my app
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Family name game">
+    <meta name="keywords" content="Family name game">
+
+    <title>Family name game</title>
+
+<link rel="stylesheet" href="/cssCodes/style.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=League+Gothic&family=Merriweather:ital,wght@1,300&family=Open+Sans:ital,wght@1,300&family=Oswald&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+
+<div class="animat">
+
+    <form>
+
+        <label for="name">name</label>
+        <input type="text" id="name">
+        
+        <label for="lastname">last name</label>
+        <input type="text" id="">
+        
+        <label for="city">city or country</label>
+        <input type="text" id="city">
+        
+        <label for="color">color</label>
+        <input type="text" id="color">
+        
+        <label for="animal">animal</label>
+        <input type="text" id="animal">
+        
+        <label for="food">food</label>
+        <input type="text" id="food">
+        
+        </form>
+        
+
+        <button id="end-btn"> end</button>
+</div>
+
+
+
+
+
+
+    
+<div class="overlay" id="overlay">
+    <h3> end of the game </h3>
+</div>
+
+
+
+
+<script>
+  let btn1= document.getElementById('end-btn')
+  let overlay1=document.getElementById("overlay")
+  btn1.addEventListener('click', ()=>{
+    overlay1.style.display="grid"
+    overlay1.classList.add("animated-overlay")
+  })
+
+</script>
+
+
+</body>
+
+
+
+
+</html>
